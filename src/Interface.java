@@ -71,7 +71,7 @@ public class Interface extends javax.swing.JFrame{
 		frame.getContentPane().setLayout(null);
 		frame.getContentPane().add(btnCrerUnClient);
 		
-		JButton btnCrerUnClient_1 = new JButton("Créer un client");
+		JButton btnCrerUnClient_1 = new JButton("Connexion client");
 		btnCrerUnClient_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -87,7 +87,7 @@ public class Interface extends javax.swing.JFrame{
 		btnCrerUnClient_1.setBounds(161, 167, 117, 29);
 		frame.getContentPane().add(btnCrerUnClient_1);
 		
-		JLabel lblBienvenueSurNotre = new JLabel("Bienvenue sur notre Client/Serveur");
+		JLabel lblBienvenueSurNotre = new JLabel("Bienvenue sur le Client/Serveur");
 		lblBienvenueSurNotre.setForeground(Color.RED);
 		lblBienvenueSurNotre.setFont(new Font("Apple SD Gothic Neo", Font.BOLD | Font.ITALIC, 18));
 		lblBienvenueSurNotre.setBounds(70, 33, 322, 23);
