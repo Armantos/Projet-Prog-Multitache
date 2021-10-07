@@ -1,29 +1,28 @@
 package Client;
-import java.io.*;import java.net.*;
 
-class Sender extends Thread
-{
-	private PrintWriter mOut;
+import java.io.*;
+import java.net.*;
 
-	public Sender(PrintWriter rec)
-	{
-	        mOut = rec;
-	}
+class Sender extends Thread {
+    private PrintWriter mOut;
 
-   
-	public void run()
-	{
-			BufferedReader clavier = new BufferedReader(new InputStreamReader(System.in));
-			while (!isInterrupted()) {
-			String str;
-			try {
-				str = clavier.readLine();
-				mOut.println(str);
-				mOut.flush();
-			} catch (IOException e) {
-			
-				e.printStackTrace();
-			}
-	}
-}
+    public Sender(PrintWriter rec) {
+        mOut = rec;
+    }
+
+
+    public void run() {
+        BufferedReader clavier = new BufferedReader(new InputStreamReader(System.in));
+        while (!isInterrupted()) {
+            String str;
+            try {
+                str = clavier.readLine();
+                mOut.println(str);
+                mOut.flush();
+            } catch (IOException e) {
+
+                e.printStackTrace();
+            }
+        }
+    }
 }

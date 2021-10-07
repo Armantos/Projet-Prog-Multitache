@@ -1,9 +1,8 @@
 package Composants;
+
 import java.net.Socket;
 
-public class ClientInfo
-
-{
+public class ClientInfo {
 
     /*Tache sender du client*/
     public ClientSender mClientSender = null;
@@ -13,5 +12,5 @@ public class ClientInfo
 
     /*Socket du client*/
     public Socket mSocket = null;
-   
+
 }
